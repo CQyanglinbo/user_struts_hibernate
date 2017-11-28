@@ -3,6 +3,10 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		resizeWindow();
 	});
+	//点击返回按钮事件
+    $("#returnUserBtn").click(function() {
+        document.location = "userAction!listUser";
+    })
 })
 function resizeWindow() {
 	var contentHeight=$(window).height()-80;
